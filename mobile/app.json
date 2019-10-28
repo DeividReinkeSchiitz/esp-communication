@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Esp communication",
+    "slug": "app",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/tec.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.esp77.esp77"
+    },
+    "android": {
+      "package": "com.esp77.esp77"
+    }
+  }
+}
