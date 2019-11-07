@@ -1,9 +1,9 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 5104,
-  "expoServerNgrokUrl": "https://gb-h6b.deividreinke.app.exp.direct",
-  "packagerNgrokUrl": "https://packager.gb-h6b.deividreinke.app.exp.direct",
-  "ngrokPid": 10004,
+  "packagerPid": 12140,
+  "expoServerNgrokUrl": "https://ix-6i7.deividreinke.mobile.exp.direct",
+  "packagerNgrokUrl": "https://packager.ix-6i7.deividreinke.mobile.exp.direct",
+  "ngrokPid": 8844,
   "devToolsPort": 19002
 }

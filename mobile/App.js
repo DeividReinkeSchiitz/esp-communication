@@ -10,9 +10,9 @@ export default class app extends Component {
   render() {
     return (
       <View style={StylesGeneral.Container}>
-        <SafeAreaView />
+        <SafeAreaView style={{ marginTop: 30 }} />
         <DropdownAlert ref={ref => global.dropDownAlertRef = ref} />
-        <Routes />
+        <Routes style={StylesGeneral.Container} />
       </View>
     );
   }

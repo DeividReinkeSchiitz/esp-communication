@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 40
+    margin: 40,
+    flex: 1
   },
   text: {
     fontSize: Fonts.big,

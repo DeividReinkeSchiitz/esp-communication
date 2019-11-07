@@ -8,7 +8,6 @@ import styles from './Styles'
 export default class Home extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       fill: 40,
       Led: false
@@ -16,6 +15,16 @@ export default class Home extends Component {
   }
   componentDidMount() {
     this.storeHighScore();
+    this.firebaseConnected();
+  }
+
+  firebaseConnected = async () => {
+    if (await firebase.database().ref(`/`)) {
+      global.dropDownAlertRef.alertWithType('success', 'Firebase Connected', "Application connected with the real time firebase");
+    } else {
+      global.dropDownAlertRef.alertWithType('error', 'Firebase Disconnect', "the application could not connect");
+    }
+
   }
 
   storeHighScore = async () => {
@@ -25,7 +34,7 @@ export default class Home extends Component {
 
       })
     } catch (error) {
-      global.dropDownAlertRef.alertWithType('error', 'Error', error.message);
+      global.dropDownAlertRef.alertWithType('error', 'Error', "The application could not connect");
     }
   };
 
